@@ -1,15 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
-import { Route, BrowserRouter as Router } from 'react-router-dom';
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import {Home} from './Pages/Home';
 
 const App: React.FC = () => {
   return (
       <Router>
-        <div>
+        <Switch>
           <Route exact path="/" component={Home} />
-        </div>
+        </Switch>
       </Router>
   );
 };
