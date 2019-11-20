@@ -11,24 +11,6 @@ export const Container = styled.div`
   bottom: 0;
 `;
 
-export const Header = styled.header`
-  display: flex;
-  justify-content: space-between;
-`;
-
-export const Link = styled.a`
-  margin-right: 30px;
-`;
-
-export const H1 = styled.h1`
-  font-size: 40px;
-  font-weight: bold;
-`;
-
-export const Paragraph = styled.p`
-  width:50%;
-`;
-
 export const BigButton = styled.button`
   width: 20%;
   height: 70px;
@@ -37,10 +19,5 @@ export const BigButton = styled.button`
   font-size: 24px;
   margin-top: 30px;
   text-decoration: none;
-`;
-
-export const Login = styled(Link)`
-  display: block;
-  margin-top: 20px;
 `;
 
