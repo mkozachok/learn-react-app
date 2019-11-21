@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from '../Link/Link';
 import {HeaderBlock} from './styled';
 
-export const Header = () => {
+export const HomePageHeader = () => {
     return (
         <HeaderBlock>
             <div>logo</div>

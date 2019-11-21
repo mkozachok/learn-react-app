@@ -6,10 +6,5 @@ type LinkProps = {
   title: string
 };
 
-const Link = ({path, title} : LinkProps) => { return <StyledLink href={path}> {title} </StyledLink> };
-const Login = ({path, title} : LinkProps) => { return <LoginLink href={path}> {title} </LoginLink> };
-
-export {
-  Link,
-  Login
-};
+export const Link = ({path, title} : LinkProps) => { return <StyledLink href={path}> {title} </StyledLink> };
+export const Login = ({path, title} : LinkProps) => { return <LoginLink href={path}> {title} </LoginLink> };

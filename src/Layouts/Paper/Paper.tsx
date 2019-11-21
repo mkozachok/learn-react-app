@@ -1,13 +1,13 @@
 import React from 'react';
 import {H1, Paragraph} from "./styled";
-import {Container} from "../../Pages/Home/styled";
 
 type PaperProps = {
   title: string,
-  text: string
+  text: string,
+  children?: React.ReactNode
 };
 
-export const Paper = ({title, text}: PaperProps) => {
+export const Paper = ({title, text, children}: PaperProps) => {
     return (
         <article>
             <H1>
@@ -16,6 +16,7 @@ export const Paper = ({title, text}: PaperProps) => {
             <Paragraph>
                 {text}
             </Paragraph>
+            {children}
         </article>
     )
 };

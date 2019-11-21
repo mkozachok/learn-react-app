@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container, BigButton} from './styled';
-import {Header} from "../../Components/Header/Header";
+import {HomePageHeader} from "../../Components/HomePageHeader/HomePageHeader";
 import {Paper} from "../../Layouts/Paper/Paper";
 import {Login} from "../../Components/Link/Link";
 
@@ -17,10 +17,11 @@ let text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
 export const homePage = () => {
     return (
         <Container>
-            <Header/>
-            <Paper title={title} text={text}/>
-            <BigButton>Create free account</BigButton>
-            <Login path="/login" title="Log in"/>
+            <HomePageHeader/>
+            <Paper title={title} text={text}>
+                <BigButton>Create free account</BigButton>
+                <Login path="/login" title="Log in"/>
+            </Paper>
         </Container>
     );
 };
