@@ -19,4 +19,3 @@ interface IProductReducer {
 export interface IProductState {
   productReducer: IProductReducer,
 }
-  
