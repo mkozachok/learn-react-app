@@ -1,3 +1,5 @@
+import api from '../configs/api';
+
 const handleError = (res: any) => {
   if (!res.ok) {
     throw Error(res.statusText);
@@ -7,7 +9,7 @@ const handleError = (res: any) => {
 
 export const productAPI = {
   getProductByID: (product_id: string) => (
-    fetch(`https://reqres.in/api/users/${product_id}`)
+    fetch(`${api.host}/products/${product_id}`)
       .then(res => handleError(res))
       .then(res => res.data)
   )

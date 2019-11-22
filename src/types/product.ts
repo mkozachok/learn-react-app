@@ -1,5 +1,3 @@
-//------------Interfaces related to Products------------//
-
 export interface IProduct {
   title: string,
   description: string,
@@ -12,3 +10,13 @@ export interface IProductAction {
   type: string,
   currentProduct: null,
 }
+
+interface IProductReducer {
+  currentProduct: null | IProduct,
+  isLoading: boolean,
+}
+
+export interface IProductState {
+  productReducer: IProductReducer,
+}
+  

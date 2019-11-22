@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getProductByIdStart } from '../store/actions';
+import { getProductByIdStart } from '../store/actions/productActions';
+import { IProductState } from '../types/product';
 
 import { RouteComponentProps } from 'react-router';
 
@@ -10,11 +11,18 @@ type TParams = {
 
 const ProductDetails = function({ match }: RouteComponentProps<TParams>) {
   const dispatch = useDispatch();
-  const product = useSelector((state: any) => state.productReducer.currentProduct);
+  const product = useSelector((state: IProductState) => state.productReducer.currentProduct);
+  const isLoading = useSelector((state: IProductState) => state.productReducer.isLoading);
   
   useEffect(() => {
     dispatch(getProductByIdStart(match.params.product_id));
   }, [dispatch, match.params.product_id]);
+
+  if (isLoading) {
+    return (
+      <div>Loading</div>
+    )
+  }
 
   return product ?
     (
@@ -23,7 +31,7 @@ const ProductDetails = function({ match }: RouteComponentProps<TParams>) {
             { product.title }
           </h1>
           <p>
-            <img src={ product.image } alt={ product.alt_image_text } />
+            <img src={ product.imageURL } alt={ product.alt_image_text } />
           </p>
           <p>
             { product.description }
