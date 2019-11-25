@@ -10,3 +10,11 @@ export const get = (url: string) => (
     .then(res => handleError(res))
     .then(res => res.data)
 )
+
+export const remove = (url: string) => (
+  fetch(url, {
+    method: 'DELETE'
+  })
+    .then(res => handleError(res))
+    .then(res => res.data)
+)

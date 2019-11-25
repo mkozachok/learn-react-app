@@ -1,8 +1,9 @@
 import api from '../configs/api';
-import { get } from './http';
+import { get, remove } from './http';
 
 export const productAPI = {
   getProductByID: (product_id: string) => get(`${api.host}/products/${product_id}`),
+  removeProductByID: (product_id: string) => remove(`${api.host}/products/${product_id}`),
 }
 
 export default productAPI;

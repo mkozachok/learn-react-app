@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import ProductDetails from './Pages/ProductDetails';
+import ProductDetails from './Pages/Product/ProductDetails/ProductDetails';
 import {homePage, loginPage, signUpPage} from "./Pages/";
 
 const App: React.FC = () => {
