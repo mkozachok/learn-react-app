@@ -35,7 +35,7 @@ const productReducer = (state = initState, action: IProductAction) => {
       }
     case productActionTypes.REMOVE_PRODUCT_BY_ID__FAILURE:
       return {
-        currentProduct: null,
+        ...state,
         isLoading: false,
       }
     default:

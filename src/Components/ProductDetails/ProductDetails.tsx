@@ -1,27 +1,25 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getProductByIdStart, removeProductByIdStart } from '../../../store/actions/productActions';
-import { IProductState } from '../../../types/product';
+import { getProductByIdStart, removeProductByIdStart } from '../../store/actions/productActions';
+import { IProductState } from '../../types/product';
 import { RouteComponentProps } from 'react-router';
 
 type TParams = {
   product_id: string,
 }
 
-const ProductDetails = function({ match }: RouteComponentProps<TParams>) {
+export const ProductDetails = function({ match }: RouteComponentProps<TParams>) {
   const dispatch = useDispatch();
   const product = useSelector((state: IProductState) => state.productReducer.currentProduct);
   const isLoading = useSelector((state: IProductState) => state.productReducer.isLoading);
 
-  const removeProduct = function (): any {
+  const removeProduct = function (): void {
     dispatch(removeProductByIdStart(match.params.product_id));
   }
 
   useEffect(() => {
     dispatch(getProductByIdStart(match.params.product_id));
   }, [dispatch, match.params.product_id]);
-
-  
 
   if (isLoading) {
     return (
@@ -53,5 +51,3 @@ const ProductDetails = function({ match }: RouteComponentProps<TParams>) {
       </div>
     )
 };
-
-export default ProductDetails;

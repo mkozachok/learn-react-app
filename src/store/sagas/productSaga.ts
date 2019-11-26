@@ -5,16 +5,6 @@ import { productActionTypes } from '../actionTypes/productActionTypes';
 function* getProductByIdSaga(action: any) {
   try {
     const currentProduct = yield call(productAPI.getProductByID, action.product_id);
-    // comment the line above and uncomment lines below if current endpoint for the API doesn't work
-    // const currentProduct: IProduct = {
-    //     id: 'someidhere'
-    //     title: 'test',
-    //     description: 'test',
-    //     price: 2,
-    //     imageURL: 'test',
-    //     alt_image_text: 'test',
-    // }
-
     yield put({ type: productActionTypes.GET_PRODUCT_BY_ID__SUCCESS, currentProduct });
   }
 
