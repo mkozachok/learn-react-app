@@ -8,18 +8,19 @@ type TParams = {
   product_id: string,
 }
 
-export const ProductDetails = function({ match }: RouteComponentProps<TParams>) {
+export const ProductDetails = ({ match }: RouteComponentProps<TParams>) => {
   const dispatch = useDispatch();
   const product = useSelector((state: IProductState) => state.productReducer.currentProduct);
   const isLoading = useSelector((state: IProductState) => state.productReducer.isLoading);
+  const product_id = match.params.product_id;
 
-  const removeProduct = function (): void {
-    dispatch(removeProductByIdStart(match.params.product_id));
+  const removeProduct =  (): void => {
+    dispatch(removeProductByIdStart(product_id));
   }
 
   useEffect(() => {
-    dispatch(getProductByIdStart(match.params.product_id));
-  }, [dispatch, match.params.product_id]);
+    dispatch(getProductByIdStart(product_id));
+  }, [dispatch, product_id]);
 
   if (isLoading) {
     return (
