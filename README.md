@@ -19,7 +19,7 @@ Be proactive! Be reactive! Learn React!
 - if you see some code that should be fixed, but you do not have time now - add comment that starts with //FIXME: what or how to fix
 (ex: //FIXME: fix any )
 - if you see some code that can be improved, or some feature can be added - comment the line with //TODO: what should be done
-(ex: //FIXME: add error handling )
+(ex: //TODO: add error handling )
 - install VS Code extension **Todo Tree** to highlight comments  (optional)
 
 ## How to Start Development
