@@ -1,22 +1,26 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getProductByIdStart } from '../store/actions/productActions';
-import { IProductState } from '../types/product';
-
+import { getProductByIdStart, removeProductByIdStart } from '../../store/actions/productActions';
+import { IProductState } from '../../types/product';
 import { RouteComponentProps } from 'react-router';
 
 type TParams = {
   product_id: string,
 }
 
-const ProductDetails = function({ match }: RouteComponentProps<TParams>) {
+export const ProductDetails = ({ match }: RouteComponentProps<TParams>) => {
   const dispatch = useDispatch();
   const product = useSelector((state: IProductState) => state.productReducer.currentProduct);
   const isLoading = useSelector((state: IProductState) => state.productReducer.isLoading);
-  
+  const product_id = match.params.product_id;
+
+  const removeProduct =  (): void => {
+    dispatch(removeProductByIdStart(product_id));
+  }
+
   useEffect(() => {
-    dispatch(getProductByIdStart(match.params.product_id));
-  }, [dispatch, match.params.product_id]);
+    dispatch(getProductByIdStart(product_id));
+  }, [dispatch, product_id]);
 
   if (isLoading) {
     return (
@@ -39,6 +43,7 @@ const ProductDetails = function({ match }: RouteComponentProps<TParams>) {
           <div>
             { product.price }
           </div>
+          <button onClick={() => removeProduct()} >Remove</button>
       </div>
     ) :
     (
@@ -47,5 +52,3 @@ const ProductDetails = function({ match }: RouteComponentProps<TParams>) {
       </div>
     )
 };
-
-export default ProductDetails;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import ProductDetails from './Pages/ProductDetails';
+import { ProductDetails } from './Components';
 import {homePage, loginPage, signUpPage} from "./Pages/";
 import InputField from './Components/Input/Input';
 

@@ -23,6 +23,21 @@ const productReducer = (state = initState, action: IProductAction) => {
         currentProduct: null,
         isLoading: false,
       }
+    case productActionTypes.REMOVE_PRODUCT_BY_ID__START:
+      return {
+        ...state,
+        isLoading: true,
+      }
+    case productActionTypes.REMOVE_PRODUCT_BY_ID__SUCCESS:
+      return {
+        currentProduct: null,
+        isLoading: false,
+      }
+    case productActionTypes.REMOVE_PRODUCT_BY_ID__FAILURE:
+      return {
+        ...state,
+        isLoading: false,
+      }
     default:
       return state;
   }
