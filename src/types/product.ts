@@ -20,3 +20,13 @@ interface IProductReducer {
 export interface IProductState {
   productReducer: IProductReducer,
 }
+
+export interface IProductList {
+  products: IProduct[],
+  isLoading: boolean
+}
+
+export interface IProductsAction {
+  type: string,
+  productsList?: IProductList
+}
