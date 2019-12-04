@@ -15,5 +15,5 @@ export interface IOtherProps {
 
 export interface IInputField {
   field: FieldInputProps<string>,
-  form: FormikProps<ICreateProductFormValues>,
+  form: FormikProps<any>,
 }

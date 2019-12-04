@@ -1,6 +1,6 @@
 import React from 'react';
 import StyledInput from './StyledInput';
-import { IInputField, IOtherProps } from '../../types/input';
+import { IInputField, IOtherProps } from '../../../types/input';
 
 const eventHandler = (e: any, removeClass: string, addClass: string) => {
   const inputWrapper = e.target.parentElement;
@@ -8,11 +8,10 @@ const eventHandler = (e: any, removeClass: string, addClass: string) => {
   inputWrapper.classList.add(addClass);
 }
 
-const InputField = ({ label, field, form, ...props }: IInputField & IOtherProps ) => (
+const FormikInputField = ({ label, field, form, ...props }: IInputField & IOtherProps ) => (
   <StyledInput>
     <label htmlFor={ field.name }>{ label }</label>
     <div className="input-wrapper">
-      {console.log((() => props)())}
       <input
           id={ field.name }
           type="text"
@@ -27,4 +26,4 @@ const InputField = ({ label, field, form, ...props }: IInputField & IOtherProps 
   </StyledInput>
 )
 
-export default InputField;
+export default FormikInputField;

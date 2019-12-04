@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import colors from '../../styles/common/colors';
+import colors from '../../../styles/common/colors';
 
 const { black_1, grey_1, orange_1 } = colors;
 
