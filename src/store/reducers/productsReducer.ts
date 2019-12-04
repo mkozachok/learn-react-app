@@ -8,17 +8,17 @@ const initialState:IProductList = {
 
 const products = (state = initialState, action:IProductsAction) => {
   switch (action.type) {
-    case productActionTypes.GET_PRODUCTS_START:
+    case productActionTypes.GET_PRODUCTS__START:
       return {
         ...state,
         isLoading: true
       }
-    case productActionTypes.GET_PRODUCTS_SUCCESS:
+    case productActionTypes.GET_PRODUCTS__SUCCESS:
       return {
         products: action.productsList,
         isLoading: false
       }
-    case productActionTypes.GET_PRODUCTS_FAILURE:
+    case productActionTypes.GET_PRODUCTS__FAILURE:
       return {
         ...state,
         isLoading: false
