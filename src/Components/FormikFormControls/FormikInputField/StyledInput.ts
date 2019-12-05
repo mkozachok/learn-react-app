@@ -1,36 +1,19 @@
 import styled from 'styled-components';
-import { IStyledInputField } from '../../types/input';
+import colors from '../../../styles/common/colors';
 
-const StyledInput = styled.div.attrs(({ required }: IStyledInputField) => ({
-  required,
-}))`
+const { black_1, grey_1, orange_1 } = colors;
+
+const StyledInput = styled.div`
   position: relative;
+  width: max-content;
   margin-top: 21px;
 
   &.error {
-    label {
-      color: red;
-
-      &::after {
-        display: none;
-      }
-    }
-
     .input-wrapper {
       &::before {
         width: 100%;
         background-color: red;
       }
-    }
-  }
-
-  label {
-    position: absolute;
-    transform: translateY(-100%);
-
-    &::after {
-      content: ' *';
-      display: ${ ({ required }) => required ? 'inline-block' : 'none' };
     }
   }
 
@@ -47,12 +30,12 @@ const StyledInput = styled.div.attrs(({ required }: IStyledInputField) => ({
   @keyframes grow {
     from {
       height: 0;
-      border-color: #000;
+      border-color: ${black_1};
     }
 
     to {
       height: 2px;
-      border-color: #000;
+      border-color: ${black_1};
     }
   }
 
@@ -100,8 +83,8 @@ const StyledInput = styled.div.attrs(({ required }: IStyledInputField) => ({
       display: block;
       width: 100%;
       height: 0;
-      border-bottom: 1px solid #808080;
-      background-color: black;
+      border-bottom: 1px solid ${grey_1};
+      background-color: ${black_1};
     }
 
     &::before {
@@ -113,7 +96,7 @@ const StyledInput = styled.div.attrs(({ required }: IStyledInputField) => ({
       display: block;
       width: 0;
       height: 3px;
-      background-color: blue;
+      background-color: ${orange_1};
     }
 
     &.isUnderlinedHover {
