@@ -15,6 +15,20 @@ export const getProductByIdFailure = () => ({
   type: productActionTypes.GET_PRODUCT_BY_ID__FAILURE,
 })
 
+export const addProductStart = (product: IProduct) => ({
+  type: productActionTypes.ADD_PRODUCT__START,
+  product,
+})
+
+export const addProductSuccess = () => ({
+  type: productActionTypes.ADD_PRODUCT__SUCCESS,
+})
+
+export const addProductFailure = () => ({
+  type: productActionTypes.ADD_PRODUCT__FAILURE,
+})
+
+
 export const removeProductByIdStart = (product_id: string) => ({
   type: productActionTypes.REMOVE_PRODUCT_BY_ID__START,
   product_id,

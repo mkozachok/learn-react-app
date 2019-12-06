@@ -35,7 +35,7 @@ export const ProductDetails = ({ match }: RouteComponentProps<TParams>) => {
             { product.title }
           </h1>
           <p>
-            <img src={ product.imageURL } alt={ product.alt_image_text } />
+            <img src={ product.previewImage } alt={ product.title } />
           </p>
           <p>
             { product.description }

@@ -38,6 +38,21 @@ const productReducer = (state = initState, action: IProductAction) => {
         ...state,
         isLoading: false,
       }
+      case productActionTypes.ADD_PRODUCT__START:
+        return {
+          ...state,
+          isLoading: true,
+        }
+      case productActionTypes.ADD_PRODUCT__SUCCESS:
+        return {
+          ...state,
+          isLoading: false,
+        }
+      case productActionTypes.ADD_PRODUCT__FAILURE:
+        return {
+          ...state,
+          isLoading: false,
+        }
     default:
       return state;
   }

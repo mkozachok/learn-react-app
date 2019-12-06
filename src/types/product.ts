@@ -1,10 +1,9 @@
 export interface IProduct {
-  _id: string
+  _id?: string
   title: string,
   description: string,
   price: number,
-  imageURL: string,
-  alt_image_text: string,
+  previewImage: string,
 }
 
 export interface IProductAction {
