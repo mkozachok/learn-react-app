@@ -1,7 +1,7 @@
 import React from 'react';
 import {Formik, Form, Field, FieldInputProps} from 'formik';
 import { useDispatch, useSelector } from 'react-redux';
-import * as Yup from 'yup';
+import { AddProductSchema } from './validation';
 import FormikInputField from '../../FormikFormControls/FormikInputField/FormikInputField';
 import {FormBlock} from './styled';
 import { addProductStart } from '../../../store/actions/productActions';
@@ -11,54 +11,29 @@ interface IInput {
   field: FieldInputProps<string>,
 }
 
-const AddProductSchema = Yup.object().shape({
-  product_name: Yup.string()
-    .min(2, 'Too Short!')
-    .max(40, 'Too Long!')
-    .required('Required'),
-
-    product_image: Yup.string()
-    .required('Required'),
-
-    product_details: Yup.string()
-    .min(2, 'Too Short!')
-    .max(300, 'Too Long!')
-    .required('Required'),
-
-    product_price: Yup.number()
-    .min(1, 'Can not be zero')
-    .positive('Must be positive')
-    .required('Required'),
-});
-
 export const CreateProductForm = () => {
   const dispatch = useDispatch();
   const isLoading = useSelector((state: IProductState) => state.productReducer.isLoading);
+  const initialValues: IProduct = { 
+    title: '', 
+    description: '', 
+    price: 0,
+    previewImage: ''
+   };
 
   return (
   <FormBlock>
     <Formik
-      initialValues={{
-        product_name: '',
-        product_image: '',
-        product_details: '',
-        product_price: '',
-      }}
+      initialValues={ initialValues }
       validationSchema={AddProductSchema}
       onSubmit={values => {
-        let newProduct: IProduct = {
-          title: values.product_name, 
-          description: values.product_details, 
-          price: Number(values.product_price), 
-          previewImage: values.product_image
-        };
-
-        dispatch(addProductStart(newProduct));
+        console.log(values);
+        dispatch(addProductStart(values));
       }}
     >
       <Form>
         <Field
-          name="product_name"
+          name="title"
           type="text"
           label="Name"
           placeholder="Product Name"
@@ -66,7 +41,7 @@ export const CreateProductForm = () => {
           component={FormikInputField}
         />
         <div>
-          <Field name="product_image">
+          <Field name="previewImage">
             {({
                 field,
               }: IInput) => (
@@ -80,7 +55,7 @@ export const CreateProductForm = () => {
           </Field>
         </div>
         <div>
-          <Field name="product_details">
+          <Field name="description">
             {({
                 field,
               }: any) => (
@@ -94,7 +69,7 @@ export const CreateProductForm = () => {
           </Field>
         </div>
         <Field
-          name="product_price"
+          name="price"
           type="number"
           label="Price"
           placeholder="0"
