@@ -24,7 +24,19 @@ function* removeProductByIdSaga(action: any) {
   }
 }
 
+function* addProductSaga(action: any) {
+  try {
+    yield call(productAPI.addProduct, action.product);
+    yield put({ type: productActionTypes.ADD_PRODUCT__SUCCESS });
+  }
+
+  catch(error) {
+    yield put({ type: productActionTypes.ADD_PRODUCT__FAILURE });
+  }
+}
+
 export default function* watchGetProductByIdSaga() {
   yield takeLatest(productActionTypes.GET_PRODUCT_BY_ID__START, getProductByIdSaga);
   yield takeEvery(productActionTypes.REMOVE_PRODUCT_BY_ID__START, removeProductByIdSaga);
+  yield takeEvery(productActionTypes.ADD_PRODUCT__START, addProductSaga);
 }

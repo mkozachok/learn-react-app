@@ -11,6 +11,18 @@ export const get = (url: string) => (
     .then(res => res.data)
 )
 
+export const post = (url: string, payload: any) => (
+  fetch(url, {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload)}
+    )
+    .then(res => handleError(res))
+    .then(res => res.data)
+)
+
 export const remove = (url: string) => (
   fetch(url, {
     method: 'DELETE'
