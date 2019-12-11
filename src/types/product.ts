@@ -12,7 +12,7 @@ export interface IProductAction {
 }
 
 interface IProductReducer {
-  currentProduct: null | IProduct,
+  currentProduct: IProduct,
   isLoading: boolean,
 }
 
