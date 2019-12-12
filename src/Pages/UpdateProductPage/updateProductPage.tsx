@@ -1,5 +1,5 @@
 import React from "react";
-import { UpdateProductForm } from "../../Components/Forms/UpdateProductForm/UpdateProductForm";
+import { UpdateProductForm } from "../../components/forms";
 import { RouteComponentProps } from "react-router";
 
 type TParams = {

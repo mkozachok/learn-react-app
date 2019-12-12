@@ -1,12 +1,17 @@
 import React from "react";
 import { DatePicker, Form, Input, Select, InputNumber } from "antd";
 import { FieldContainer } from './styled';
+import { IAntdFieldProps } from "../../../types/input";
 
 const FormItem = Form.Item;
 const { Option } = Select;
 const { TextArea } = Input;
 
-const CreateAntField = AntComponent => ({
+interface IInputChangeProps {
+  target: any
+}
+
+const createAntField = (AntComponent: any) => ({
   field,
   form,
   hasFeedback,
@@ -15,15 +20,15 @@ const CreateAntField = AntComponent => ({
   submitCount,
   type,
   ...props
-}) => {
+}: IAntdFieldProps) => {
   const touched = form.touched[field.name];
   const submitted = submitCount > 0;
   const hasError = form.errors[field.name];
   const submittedError = hasError && submitted;
   const touchedError = hasError && touched;
-  const onInputChange = ({ target: { value } }) =>
+  const onInputChange = ({ target: { value } }: IInputChangeProps) =>
     form.setFieldValue(field.name, value);
-  const onChange = value => form.setFieldValue(field.name, value);
+  const onChange = (value: any) => form.setFieldValue(field.name, value);
   const onBlur = () => form.setFieldTouched(field.name, true);
 
   return (
@@ -41,20 +46,20 @@ const CreateAntField = AntComponent => ({
         <AntComponent
           {...field}
           {...props}
-          parser={type === 'number' ? value => value.replace('-', ''): ''}
+          parser={type === 'number' ? (value: any) => value.replace('-', ''): ''}
           onBlur={onBlur}
           onChange={type && type !== 'number' ? onInputChange : onChange}
         >
           {selectOptions &&
-            selectOptions.map(name => <Option key={name}>{name}</Option>)}
+            selectOptions.map((name: any) => <Option key={name}>{name}</Option>)}
         </AntComponent>
       </FormItem>
     </FieldContainer>
   );
-};
+ };
 
-export const AntSelect = CreateAntField(Select);
-export const AntDatePicker = CreateAntField(DatePicker);
-export const AntInput = CreateAntField(Input);
-export const AntInputNumber = CreateAntField(InputNumber);
-export const AntTextArea = CreateAntField(TextArea);
+export const AntSelect = createAntField(Select);
+export const AntDatePicker = createAntField(DatePicker);
+export const AntInput = createAntField(Input);
+export const AntInputNumber = createAntField(InputNumber);
+export const AntTextArea = createAntField(TextArea);

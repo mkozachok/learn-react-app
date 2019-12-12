@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, Upload, Icon, Button, message } from "antd";
 import { FieldContainer } from './styled';
+import { IAntdUploadProps } from "../../../types/input";
 
 const FormItem = Form.Item;
 
@@ -9,16 +10,15 @@ const CreateAntUploader = () => ({
   form,
   hasFeedback,
   label,
-  selectOptions,
   submitCount,
   ...props
-}) => {
+}: IAntdUploadProps) => {
   const touched = form.touched[field.name];
   const submitted = submitCount > 0;
   const hasError = form.errors[field.name];
   const submittedError = hasError && submitted;
   const touchedError = hasError && touched;
-  const onChange = info => {if (info.file.status !== 'uploading') {
+  const onChange = (info: any) => {if (info.file.status !== 'uploading') {
     console.log(info.file, info.fileList);
   }
   if (info.file.status === 'done') {
@@ -28,7 +28,7 @@ const CreateAntUploader = () => ({
   }
     // form.setFieldValue(field.name, value);
   };
-  const onRemove = value => {form.setFieldValue(field.name, '')};
+  const onRemove = (value: any) => {form.setFieldValue(field.name, '')};
   // const onBlur = () => form.setFieldTouched(field.name, true);
   return (
     <FieldContainer>

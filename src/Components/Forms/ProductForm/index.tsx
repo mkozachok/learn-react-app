@@ -4,7 +4,7 @@ import {
   AntInput,
   AntInputNumber,
   AntTextArea
-} from "../../../Components/CreateAntFields/CreateAntFields";
+} from "../../../components/formControls";
 import { SubmitContainer } from "./styled";
 import { Button } from "antd";
 
@@ -13,8 +13,7 @@ interface IFormikProps {
   isValid: boolean;
 }
 
-export default ({ isSubmitting, isValid }: IFormikProps) => {
-  return (
+export const ProductForm = ({ isSubmitting, isValid }: IFormikProps) => (
     <Form>
       <Field
         name="title"
@@ -25,11 +24,6 @@ export default ({ isSubmitting, isValid }: IFormikProps) => {
         component={AntInput}
         hasFeedback
       />
-      {/* <Field
-          name="previewImage"
-          label="Upload image"
-          component={AntUpload}
-          /> */}
       <Field
         name="description"
         label="Description"
@@ -65,5 +59,4 @@ export default ({ isSubmitting, isValid }: IFormikProps) => {
         </Button>
       </SubmitContainer>
     </Form>
-  );
-};
+);
