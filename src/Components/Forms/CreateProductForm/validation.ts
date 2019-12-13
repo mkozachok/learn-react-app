@@ -15,7 +15,7 @@ export const AddProductSchema = Yup.object().shape({
    .required('Required'),
 
    price: Yup.number()
-   .min(1, 'Can not be zero')
    .positive('Must be positive')
+   .min(1, 'Can not be zero')
    .required('Required'),
 });
