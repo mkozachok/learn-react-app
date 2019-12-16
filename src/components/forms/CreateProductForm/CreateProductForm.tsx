@@ -2,7 +2,6 @@ import React from "react";
 import { Formik } from "formik";
 import { useDispatch } from "react-redux";
 import { AddProductSchema } from "./validation";
-import { productAddSuccess } from "../../../components/Notification/Notification";
 import { FormBlock } from "../ProductForm/styled";
 import { ProductForm } from "../ProductForm";
 import { addProductStart } from "../../../store/actions/productActions";
@@ -25,7 +24,6 @@ export const CreateProductForm = () => {
         render={ProductForm}
         onSubmit={(values, actions) => {
           dispatch(addProductStart(values));
-          productAddSuccess();
           actions.setSubmitting(false);
         }}
       ></Formik>

@@ -16,11 +16,11 @@ function* getProductByIdSaga(action: any) {
 function* removeProductByIdSaga(action: any) {
   try {
     yield call(productAPI.removeProductByID, action.product_id);
-    yield put({ type: productActionTypes.GET_PRODUCT_BY_ID__SUCCESS });
+    yield put({ type: productActionTypes.REMOVE_PRODUCT_BY_ID__SUCCESS });
   }
 
   catch(error) {
-    yield put({ type: productActionTypes.GET_PRODUCT_BY_ID__FAILURE });
+    yield put({ type: productActionTypes.REMOVE_PRODUCT_BY_ID__FAILURE });
   }
 }
 

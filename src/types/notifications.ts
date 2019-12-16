@@ -4,6 +4,10 @@ interface INotification {
 }
 
 export interface INotifications {
-  success: INotification,
-  error: INotification,
+  productCreationSuccess: INotification,
+  productCreationError: INotification,
+  productDeletionSuccess: INotification,
+  productDeletionError: INotification,
+  productUpdateSuccess: INotification,
+  productUpdateError: INotification,
 }
