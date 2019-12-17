@@ -1,6 +1,6 @@
-import { INotifications } from "../types/notifications";
+import { IProductNotifications } from "../types/notifications";
 
-const notifications: INotifications = {
+const notifications: IProductNotifications = {
   productCreationSuccess: {
     message: "Success",
     description: "The product was created",

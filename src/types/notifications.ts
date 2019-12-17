@@ -1,13 +1,13 @@
-interface INotification {
+interface IProductNotification {
   message: string,
   description: string,
 }
 
-export interface INotifications {
-  productCreationSuccess: INotification,
-  productCreationError: INotification,
-  productDeletionSuccess: INotification,
-  productDeletionError: INotification,
-  productUpdateSuccess: INotification,
-  productUpdateError: INotification,
+export interface IProductNotifications {
+  productCreationSuccess: IProductNotification,
+  productCreationError: IProductNotification,
+  productDeletionSuccess: IProductNotification,
+  productDeletionError: IProductNotification,
+  productUpdateSuccess: IProductNotification,
+  productUpdateError: IProductNotification,
 }
