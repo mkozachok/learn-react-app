@@ -30,6 +30,7 @@ const createAntField = (AntComponent: any) => ({
     form.setFieldValue(field.name, value);
   const onChange = (value: any) => form.setFieldValue(field.name, value);
   const onBlur = () => form.setFieldTouched(field.name, true);
+  const formValues = form.values;
 
   return (
     <FieldContainer>
@@ -40,7 +41,12 @@ const createAntField = (AntComponent: any) => ({
         hasFeedback={
           (hasFeedback && submitted) || (hasFeedback && touched) ? true : false
         }
-        help={submittedError || touchedError ? hasError : false}
+        help={submittedError || touchedError ? hasError :
+          (
+            field.name === "price" ?
+            `The profit is ${formValues.price - formValues.costPrice}` : false
+          )
+        }
         validateStatus={submittedError || touchedError ? "error" : "success"}
       >
         <AntComponent
