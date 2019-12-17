@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import { Formik } from "formik";
 import { useDispatch, useSelector } from "react-redux";
 import { AddProductSchema } from "../CreateProductForm/validation";
-import { productAddSuccess } from "../../../components/Notification/Notification";
 import { FormBlock } from "../ProductForm/styled";
 import { ProductForm } from "../ProductForm";
 import { IProduct, IProductState } from "../../../types/product";
 import { getProductByIdStart } from "../../../store/actions/productActions";
 import { Spin } from "antd";
 import { SpinBlock } from "./styled";
+import { productActionTypes } from '../../../store/actionTypes/productActionTypes';
 
 type TParams = {
   product_id: string;
@@ -44,7 +44,7 @@ export const UpdateProductForm = (props: TParams) => {
         validationSchema={AddProductSchema}
         render={ProductForm}
         onSubmit={(values, actions) => {
-          productAddSuccess();
+          dispatch({ type: productActionTypes.UPDATE_PRODUCT__START });
           actions.setSubmitting(false);
         }}
       >

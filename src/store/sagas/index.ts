@@ -1,5 +1,11 @@
+import { all } from 'redux-saga/effects';
+
 import watchGetProductByIdSaga from './productSaga';
+import watchProductCreation from './productNotificationSagas';
 
 export default function* rootSaga() {
-  yield watchGetProductByIdSaga();
+  yield all([
+    watchGetProductByIdSaga(),
+    watchProductCreation(),
+  ]);
 }
