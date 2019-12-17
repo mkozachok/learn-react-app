@@ -34,6 +34,14 @@ export const ProductForm = ({ isSubmitting, isValid }: IFormikProps) => (
         hasFeedback
       />
       <Field
+        name="costPrice"
+        label="Cost price"
+        type="number"
+        placeholder="0"
+        component={AntInputNumber}
+        hasFeedback
+      />
+      <Field
         name="price"
         label="Price"
         type="number"

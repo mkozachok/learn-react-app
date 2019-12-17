@@ -12,6 +12,7 @@ export const CreateProductForm = () => {
   const initialValues: IProduct = {
     title: "",
     description: "",
+    costPrice: 0,
     price: 0,
     previewImage: ""
   };
