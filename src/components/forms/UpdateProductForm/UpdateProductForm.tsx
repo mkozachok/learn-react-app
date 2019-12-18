@@ -5,10 +5,9 @@ import { AddProductSchema } from "../CreateProductForm/validation";
 import { FormBlock } from "../ProductForm/styled";
 import { ProductForm } from "../ProductForm";
 import { IProduct, IProductState } from "../../../types/product";
-import { getProductByIdStart } from "../../../store/actions/productActions";
+import { getProductByIdStart, updateProductStart } from "../../../store/actions/productActions";
 import { Spin } from "antd";
 import { SpinBlock } from "./styled";
-import { productActionTypes } from '../../../store/actionTypes/productActionTypes';
 
 type TParams = {
   product_id: string;
@@ -25,7 +24,7 @@ export const UpdateProductForm = (props: TParams) => {
   const initialValues: IProduct = product;
 
   useEffect(() => {
-    dispatch(getProductByIdStart(props.product_id));
+      dispatch(getProductByIdStart(props.product_id));
   }, [dispatch, props.product_id]);
 
   if (isLoading) {
@@ -42,12 +41,13 @@ export const UpdateProductForm = (props: TParams) => {
         enableReinitialize={true}
         initialValues={initialValues}
         validationSchema={AddProductSchema}
-        render={ProductForm}
         onSubmit={(values, actions) => {
-          dispatch({ type: productActionTypes.UPDATE_PRODUCT__START });
+          dispatch(updateProductStart(values));
           actions.setSubmitting(false);
         }}
       >
+        {({isSubmitting, isValid}) => (
+          <ProductForm isSubmitting={isSubmitting} isValid={isValid}/>
         )}
       </Formik>
     </FormBlock>
