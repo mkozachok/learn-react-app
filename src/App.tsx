@@ -7,7 +7,8 @@ import {
   loginPage,
   signUpPage,
   createProductPage,
-  updateProductPage
+  updateProductPage,
+  AdminDashboard,
 } from "./pages";
 
 const App: React.FC = () => {
@@ -23,6 +24,7 @@ const App: React.FC = () => {
           component={updateProductPage}
         />
         <Route path="/products/:product_id" component={ProductDetails} />
+        <Route path="/dashboard/analysis" component={AdminDashboard} />
       </Switch>
     </Router>
   );
