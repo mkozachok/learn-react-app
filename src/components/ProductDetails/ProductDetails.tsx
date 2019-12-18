@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, ReactElement } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getProductByIdStart, removeProductByIdStart } from '../../store/actions/productActions';
 import { IProductState } from '../../types/product';
@@ -8,7 +8,7 @@ type TParams = {
   product_id: string,
 }
 
-export const ProductDetails = ({ match }: RouteComponentProps<TParams>) => {
+export const ProductDetails = ({ match }: RouteComponentProps<TParams> | any) => {
   const dispatch = useDispatch();
   const product = useSelector((state: IProductState) => state.productReducer.currentProduct);
   const isLoading = useSelector((state: IProductState) => state.productReducer.isLoading);
@@ -47,7 +47,7 @@ export const ProductDetails = ({ match }: RouteComponentProps<TParams>) => {
       </div>
     ) :
     (
-      <div>
+      <div className="product-details">
         The product wasn't found
       </div>
     )
