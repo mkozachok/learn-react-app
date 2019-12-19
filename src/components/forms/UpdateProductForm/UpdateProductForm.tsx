@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { Formik } from "formik";
+import { Spin } from "antd";
 import { useDispatch, useSelector } from "react-redux";
+import { IProductState } from "../../../types/product";
+import { getProductByIdStart, updateProductStart } from "../../../store/actions/productActions";
 import { AddProductSchema } from "../CreateProductForm/validation";
 import { FormBlock } from "../ProductForm/styled";
 import { ProductForm } from "../ProductForm";
-import { IProduct, IProductState } from "../../../types/product";
-import { getProductByIdStart, updateProductStart } from "../../../store/actions/productActions";
-import { Spin } from "antd";
 import { SpinBlock } from "./styled";
 
 type TParams = {
@@ -15,31 +15,32 @@ type TParams = {
 
 export const UpdateProductForm = (props: TParams) => {
   const dispatch = useDispatch();
-  const product = useSelector(
-    (state: IProductState) => state.productReducer.currentProduct
-  );
-  const isLoading = useSelector(
-    (state: IProductState) => state.productReducer.isLoading
-  );
-  const initialValues: IProduct = product;
-
   useEffect(() => {
       dispatch(getProductByIdStart(props.product_id));
   }, [dispatch, props.product_id]);
+  
+  useEffect(() => {
+    return () => console.log('end')
+}, []);
 
-  if (isLoading) {
-    return (
-      <SpinBlock>
-        <Spin size="large" />
-      </SpinBlock>
-    );
-  }
+  const {currentProduct: product} = useSelector(
+    (state: IProductState) => state.productReducer
+  );
+
+  // TODO: investigate problem with update state for unmounted component
+  // if (isLoading) {
+  //   return (
+  //     <SpinBlock>
+  //       <Spin size="large" />
+  //     </SpinBlock>
+  //   );
+  // }
 
   return product ? (
     <FormBlock>
       <Formik
-        enableReinitialize={true}
-        initialValues={initialValues}
+        key={product.title}
+        initialValues={product}
         validationSchema={AddProductSchema}
         onSubmit={(values, actions) => {
           dispatch(updateProductStart(values));
@@ -51,5 +52,8 @@ export const UpdateProductForm = (props: TParams) => {
         )}
       </Formik>
     </FormBlock>
-  ) : null;
+  ) : 
+    <SpinBlock>
+      <Spin size="large" />
+    </SpinBlock>
 };
