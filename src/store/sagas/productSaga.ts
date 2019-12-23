@@ -3,7 +3,7 @@ import productAPI from '../../services/productAPI';
 import { productActionTypes } from '../actionTypes/productActionTypes';
 import { browserHistory } from '../../index';
 
-function* getProductByIdSaga(action: any) {
+export function* getProductByIdSaga(action: any) {
   try {
     const currentProduct = yield call(productAPI.getProductByID, action.product_id);
     yield put({ type: productActionTypes.GET_PRODUCT_BY_ID__SUCCESS, currentProduct });
@@ -14,7 +14,7 @@ function* getProductByIdSaga(action: any) {
   }
 }
 
-function* removeProductByIdSaga(action: any) {
+export function* removeProductByIdSaga(action: any) {
   try {
     yield call(productAPI.removeProductByID, action.product_id);
     yield put({ type: productActionTypes.REMOVE_PRODUCT_BY_ID__SUCCESS });
@@ -25,7 +25,7 @@ function* removeProductByIdSaga(action: any) {
   }
 }
 
-function* addProductSaga(action: any) {
+export function* addProductSaga(action: any) {
   try {
     yield call(productAPI.addProduct, action.product);
     yield put({ type: productActionTypes.ADD_PRODUCT__SUCCESS });
@@ -36,7 +36,7 @@ function* addProductSaga(action: any) {
   }
 }
 
-function* updateProductSaga(action: any) {
+export function* updateProductSaga(action: any) {
   try {
     yield call(productAPI.updateProduct, action.product);
     yield put({ type: productActionTypes.UPDATE_PRODUCT__SUCCESS });
@@ -48,7 +48,7 @@ function* updateProductSaga(action: any) {
   }
 }
 
-export default function* watchGetProductByIdSaga() {
+export function* watchProductSagas() {
   yield takeLatest(productActionTypes.GET_PRODUCT_BY_ID__START, getProductByIdSaga);
   yield takeEvery(productActionTypes.REMOVE_PRODUCT_BY_ID__START, removeProductByIdSaga);
   yield takeEvery(productActionTypes.UPDATE_PRODUCT__START, updateProductSaga);

@@ -8,11 +8,11 @@ export interface IProduct {
 
 export interface IProductAction {
   type: string,
-  currentProduct: null,
+  currentProduct: IProduct | null,
 }
 
-interface IProductReducer {
-  currentProduct: IProduct,
+export interface IProductReducer {
+  currentProduct: IProduct | null,
   isLoading: boolean,
 }
 
