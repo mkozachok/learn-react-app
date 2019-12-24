@@ -24,7 +24,7 @@ const App: React.FC = () => {
           component={updateProductPage}
         />
         <Route path="/products/:product_id" component={ProductDetails} />
-        <Route path="/dashboard/analysis" component={AdminDashboard} />
+        <Route path="/admin/dashboard" component={AdminDashboard} />
       </Switch>
     </Router>
   );
