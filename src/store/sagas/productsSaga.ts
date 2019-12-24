@@ -3,6 +3,7 @@ import productAPI from '../../services/productAPI';
 import { productActionTypes } from '../actionTypes/productActionTypes';
 
 function* getProductsListSaga() {
+
   try {
     const productsList = yield call(productAPI.getAllProducts);
     yield put({type: productActionTypes.GET_PRODUCTS__SUCCESS, productsList});

@@ -1,12 +1,12 @@
 import { productActionTypes } from '../actionTypes/productActionTypes';
-import {IProductList, IProductsAction} from "../../types/product";
+import {IProductsReducer, IProductsAction} from "../../types/product";
 
-const initialState:IProductList = {
-  products: [],
+const initialState = {
+  products: null,
   isLoading: false
 };
 
-const products = (state = initialState, action:IProductsAction) => {
+const productsReducer = (state = initialState, action:IProductsAction) => {
   switch (action.type) {
     case productActionTypes.GET_PRODUCTS__START:
       return {
@@ -25,3 +25,5 @@ const products = (state = initialState, action:IProductsAction) => {
       }
   }
 };
+
+export default productsReducer;

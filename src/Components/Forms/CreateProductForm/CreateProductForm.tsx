@@ -14,11 +14,13 @@ interface IInput {
 export const CreateProductForm = () => {
   const dispatch = useDispatch();
   const isLoading = useSelector((state: IProductState) => state.productReducer.isLoading);
-  const initialValues: IProduct = { 
-    title: '', 
-    description: '', 
+  const initialValues: IProduct = {
+    title: '',
+    description: '',
     price: 0,
-    previewImage: ''
+    previewImage: '',
+    created_at: '',
+    updated_at: ''
    };
 
   return (

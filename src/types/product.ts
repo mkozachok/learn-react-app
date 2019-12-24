@@ -4,6 +4,8 @@ export interface IProduct {
   description: string,
   price: number,
   previewImage: string,
+  created_at: string,
+  updated_at: string
 }
 
 export interface IProductAction {
@@ -20,12 +22,16 @@ export interface IProductState {
   productReducer: IProductReducer,
 }
 
-export interface IProductList {
-  products: IProduct[],
-  isLoading: boolean
+export interface IProductsReducer {
+  products: null | IProduct[] | undefined,
+  isLoading: boolean,
+}
+
+export interface IProductsState {
+  productsReducer: IProductsReducer,
 }
 
 export interface IProductsAction {
   type: string,
-  productsList?: IProductList
+  productsList?: null | IProduct[]
 }

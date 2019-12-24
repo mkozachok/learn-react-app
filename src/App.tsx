@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import { ProductDetails } from './Components';
-import {homePage, loginPage, signUpPage} from "./Pages/";
+import {homePage, loginPage, signUpPage, ProductsPage} from "./Pages/";
 import { createProductPage} from './Pages/CreateProductPage/createProductPage';
 
 const App: React.FC = () => {
@@ -12,6 +12,7 @@ const App: React.FC = () => {
           <Route exact path="/" component={homePage} />
           <Route path="/login" component={loginPage} />
           <Route path="/signup" component={signUpPage} />
+          <Route exact path="/products" component={ProductsPage} />
           <Route path="/products/add" component={ createProductPage } />
           <Route path="/products/:product_id" component={ ProductDetails } />
         </Switch>
