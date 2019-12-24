@@ -18,10 +18,6 @@ export const UpdateProductForm = (props: TParams) => {
   useEffect(() => {
       dispatch(getProductByIdStart(props.product_id));
   }, [dispatch, props.product_id]);
-  
-  useEffect(() => {
-    return () => console.log('end')
-}, []);
 
   const {currentProduct: product} = useSelector(
     (state: IProductState) => state.productReducer

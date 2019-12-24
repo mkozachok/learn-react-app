@@ -1,14 +1,7 @@
 import * as actions from '../../store/actions/productActions';
-import { IProduct } from '../../types/product';
 import { productActionTypes } from '../../store/actionTypes/productActionTypes';
+import { tempProduct } from '../../__mocks__/productMock';
 
-const tempProduct: IProduct = {
-  _id: 'product_id',
-  title: 'product',
-  description: 'description',
-  previewImage: 'img',
-  price: 22,
-}
 
 describe('ACTIONS', () => {
   // GET PRODUCT ACTIONS

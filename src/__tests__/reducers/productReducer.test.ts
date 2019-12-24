@@ -1,16 +1,10 @@
 import productReducer from "../../store/reducers/productReducer";
-import { IProduct, IProductAction } from "../../types/product";
+import { IProductAction } from "../../types/product";
+import { tempProduct } from '../../__mocks__/productMock';
 
 const initState = {
   currentProduct: null,
   isLoading: false
-};
-const tempProduct: IProduct = {
-  _id: 'temp',
-  title: 'title',
-  description: 'description',
-  price: 22,
-  previewImage: 'img'
 };
 
 describe("REDUCER", () => {
