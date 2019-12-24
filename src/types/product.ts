@@ -23,7 +23,7 @@ export interface IProductState {
 }
 
 export interface IProductsReducer {
-  products: null | IProduct[] | undefined,
+  products: null | IProduct[],
   isLoading: boolean,
 }
 
@@ -33,5 +33,5 @@ export interface IProductsState {
 
 export interface IProductsAction {
   type: string,
-  productsList?: null | IProduct[]
+  productsList: null
 }

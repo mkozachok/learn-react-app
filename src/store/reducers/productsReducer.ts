@@ -23,6 +23,8 @@ const productsReducer = (state = initialState, action:IProductsAction) => {
         ...state,
         isLoading: false
       }
+    default:
+      return state;
   }
 };
 

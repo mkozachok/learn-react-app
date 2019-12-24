@@ -1,8 +1,10 @@
 import React, {useEffect} from 'react';
+import 'antd/dist/antd.css';
 import { Table, Divider, Tag } from 'antd';
 import {useSelector, useDispatch} from "react-redux";
 import {getProductsStart} from "../../store/actions/productsActions";
 import {IProductsState} from "../../types/product";
+import {Header} from "./styled";
 
 const columns = [
   {
@@ -40,19 +42,13 @@ export const ProductsPage = () => {
   useEffect(() => {
     dispatch(getProductsStart());
   }, [dispatch, products]);
-console.log(products);
-
-  return (
+  return products ? (
     <div>
-      <h1>Products</h1>
-      {
-        loading &&
-        <div>Prodcuts are loading</div>
-      }
+      <Header>Products</Header>
       <div>
-        {/*<Table columns={columns} dataSource={products}/>*/}
+        <Table columns={columns} dataSource={products} rowKey='_id'/>
       </div>
     </div>
-  );
+  ) : (<div>no products</div>);
 };
 
