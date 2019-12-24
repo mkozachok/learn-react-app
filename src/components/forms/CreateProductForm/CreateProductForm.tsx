@@ -22,12 +22,15 @@ export const CreateProductForm = () => {
       <Formik
         initialValues={initialValues}
         validationSchema={AddProductSchema}
-        render={ProductForm}
         onSubmit={(values, actions) => {
           dispatch(addProductStart(values));
           actions.setSubmitting(false);
         }}
-      ></Formik>
+      >
+        {({isSubmitting, isValid}) => (
+          <ProductForm isSubmitting={isSubmitting} isValid={isValid}/>
+        )}
+      </Formik>
     </FormBlock>
   );
 };

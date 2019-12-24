@@ -28,6 +28,18 @@ export const addProductFailure = () => ({
   type: productActionTypes.ADD_PRODUCT__FAILURE,
 })
 
+export const updateProductStart = (product: IProduct) => ({
+  type: productActionTypes.UPDATE_PRODUCT__START,
+  product,
+})
+
+export const updateProductSuccess = () => ({
+  type: productActionTypes.UPDATE_PRODUCT__SUCCESS,
+})
+
+export const updateProductFailure = () => ({
+  type: productActionTypes.UPDATE_PRODUCT__FAILURE,
+})
 
 export const removeProductByIdStart = (product_id: string) => ({
   type: productActionTypes.REMOVE_PRODUCT_BY_ID__START,

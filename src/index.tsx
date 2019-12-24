@@ -10,6 +10,9 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import rootSaga from './store/sagas/index';
 import rootReducer from './store/reducers/index';
 import 'antd/dist/antd.css';
+import { createBrowserHistory } from 'history';
+
+export const browserHistory = createBrowserHistory();
 
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(

@@ -61,7 +61,7 @@ export const ProductForm = ({ isSubmitting, isValid }: IFormikProps) => (
         <Button
           htmlType="submit"
           loading={isSubmitting}
-          disabled={!isValid}
+          disabled={!isValid || isSubmitting}
         >
           Submit
         </Button>
