@@ -6,4 +6,5 @@ export const tempProduct: IProduct = {
   description: 'description',
   previewImage: 'img',
   price: 22,
+  costPrice: 25
 }
