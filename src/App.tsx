@@ -7,7 +7,8 @@ import {
   loginPage,
   signUpPage,
   createProductPage,
-  updateProductPage
+  updateProductPage,
+  AdminDashboard,
 } from "./pages";
 import { browserHistory } from './index'
 
@@ -24,6 +25,7 @@ const App: React.FC = () => {
           component={updateProductPage}
         />
         <Route path="/products/:product_id" component={ProductDetails} />
+        <Route path="/admin/dashboard" component={AdminDashboard} />
       </Switch>
     </Router>
   );
