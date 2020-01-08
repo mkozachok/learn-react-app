@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { IProductState } from "../../../types/product";
 import { getProductByIdStart, updateProductStart } from "../../../store/actions/productActions";
 import { AddProductSchema } from "../CreateProductForm/validation";
-import { FormBlock } from "../ProductForm/styled";
+import { FormBlock } from "../StyledFormikFields/StyledFormikFields";
 import { ProductForm } from "../ProductForm";
 import { SpinBlock } from "./styled";
 

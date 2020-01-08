@@ -5,13 +5,9 @@ import {
   AntInputNumber,
   AntTextArea
 } from "../../../components/formControls";
-import { SubmitContainer } from "./styled";
+import { SubmitContainer } from "../StyledFormikFields/StyledFormikFields";
 import { Button } from "antd";
-
-interface IFormikProps {
-  isSubmitting: boolean;
-  isValid: boolean;
-}
+import { IFormikProps } from '../../../types/formikProps';
 
 export const ProductForm = ({ isSubmitting, isValid }: IFormikProps) => (
     <Form>
