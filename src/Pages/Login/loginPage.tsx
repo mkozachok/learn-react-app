@@ -1,5 +1,8 @@
 import React from 'react';
+import { LoginPageLayout } from '../../layouts/LoginPageLayout/LoginPageLayout'
 
-export const loginPage = function() {
-    return <h1>Login</h1>  ;
+export const loginPage = () => {
+    return (
+    <LoginPageLayout />
+    );
 };
