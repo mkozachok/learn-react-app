@@ -3,7 +3,8 @@ import {
   AntDatePicker,
   AntSelect,
   AntTextArea,
-  AntInputNumber
+  AntInputNumber,
+  AntPhoneNumber,
 } from "./creators/CreateAntFields";
 import { AntUpload } from "./creators/CreateAntUploader";
 
@@ -13,5 +14,6 @@ export {
   AntSelect,
   AntTextArea,
   AntInputNumber,
-  AntUpload
+  AntUpload,
+  AntPhoneNumber,
 };

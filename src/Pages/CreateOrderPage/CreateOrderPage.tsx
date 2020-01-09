@@ -4,7 +4,7 @@ import CreateOrderForm from "../../components/forms/CreateOrderForm/CreateOrderF
 export const CreateOrderPage = () => {
   return(
     <div>
-      <h1>Create Product</h1>
+      <h1>Create Order</h1>
       <CreateOrderForm />
     </div>
   );

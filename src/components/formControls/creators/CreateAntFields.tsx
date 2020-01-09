@@ -5,7 +5,7 @@ import { IAntdFieldProps } from "../../../types/input";
 
 const FormItem = Form.Item;
 const { Option } = Select;
-const { TextArea } = Input;
+const { TextArea, Group } = Input;
 
 interface IInputChangeProps {
   target: any
@@ -36,15 +36,15 @@ const createAntField = (AntComponent: any) => ({
     <FieldContainer>
       <FormItem
         label={label}
-        labelCol= {{ span: 9 }}
-        wrapperCol= {{ span: 12 }}
+        labelCol={{ span: 9 }}
+        wrapperCol={{ span: 12 }}
         hasFeedback={
           (hasFeedback && submitted) || (hasFeedback && touched) ? true : false
         }
         help={submittedError || touchedError ? hasError :
           (
             field.name === "price" ?
-            `The profit is ${formValues.price - formValues.costPrice}` : false
+              `The profit is ${formValues.price - formValues.costPrice}` : false
           )
         }
         validateStatus={submittedError || touchedError ? "error" : "success"}
@@ -52,7 +52,7 @@ const createAntField = (AntComponent: any) => ({
         <AntComponent
           {...field}
           {...props}
-          parser={type === 'number' ? (value: any) => value.replace('-', ''): ''}
+          parser={type === 'number' ? (value: any) => value.replace('-', '') : ''}
           onBlur={onBlur}
           onChange={type && type !== 'number' ? onInputChange : onChange}
         >
@@ -62,7 +62,17 @@ const createAntField = (AntComponent: any) => ({
       </FormItem>
     </FieldContainer>
   );
- };
+};
+
+export const AntPhoneNumber = () => (
+  <Group compact>
+    <Select defaultValue="Zhejiang">
+      <Option value="Zhejiang">Zhejiang</Option>
+      <Option value="Jiangsu">Jiangsu</Option>
+    </Select>
+    {createAntField(Input)}
+  </Group>
+)
 
 export const AntSelect = createAntField(Select);
 export const AntDatePicker = createAntField(DatePicker);
