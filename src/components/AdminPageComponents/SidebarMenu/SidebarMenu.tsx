@@ -1,46 +1,27 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { Menu, Icon } from 'antd';
+import productsIcon from '../../icons/productsIcon';
 
 const { SubMenu, Item } = Menu;
 
 export const SidebarMenu = () => (
-  <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
-    <Item key="1">
-      <Icon type="pie-chart" />
-      <span>Option 1</span>
-    </Item>
-    <Item key="2">
-      <Icon type="desktop" />
-      <span>Option 2</span>
-    </Item>
+  <Menu theme="dark" mode="inline">
     <SubMenu
       key="sub1"
       title={
         <span>
-          <Icon type="user" />
-          <span>User</span>
+          <Icon component={productsIcon} />
+          <span>Products</span>
         </span>
       }
     >
-      <Item key="3">Tom</Item>
-      <Item key="4">Bill</Item>
-      <Item key="5">Alex</Item>
+      <Item key="1">
+        <NavLink to="/admin/products">All products</NavLink>
+      </Item>
+      <Item key="2">
+        <NavLink to="/admin/products/add">Add product</NavLink>
+      </Item>
     </SubMenu>
-    <SubMenu
-      key="sub2"
-      title={
-        <span>
-          <Icon type="team" />
-          <span>Team</span>
-        </span>
-      }
-    >
-      <Item key="6">Team 1</Item>
-      <Item key="8">Team 2</Item>
-    </SubMenu>
-    <Item key="9">
-      <Icon type="file" />
-      <span>File</span>
-    </Item>
   </Menu>
 )
