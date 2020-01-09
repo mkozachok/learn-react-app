@@ -19,12 +19,12 @@ const App: React.FC = () => {
         <Route exact path="/" component={homePage} />
         <Route path="/login" component={loginPage} />
         <Route path="/signup" component={signUpPage} />
-        <Route path="/products/add" component={createProductPage} />
+        <Route path="/admin/products/add" component={createProductPage} />
         <Route
-          path="/products/:product_id/edit"
+          path="/admin/products/:product_id/edit"
           component={updateProductPage}
         />
-        <Route path="/products/:product_id" component={ProductDetails} />
+        <Route path="/admin/products/:product_id" component={ProductDetails} />
         <Route path="/admin/dashboard" component={AdminDashboard} />
       </Switch>
     </Router>
