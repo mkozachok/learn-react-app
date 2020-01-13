@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { Formik, Field } from "formik";
-import { Spin, Icon } from "antd";
+import { Icon } from "antd";
+import { SubmitButton } from "../../../components/formControls/buttons/SubmitButton";
 import {
   FormBlock,
   RowDiv,
@@ -14,18 +15,15 @@ import {
   AntPassword,
   AntCheckbox
 } from "../../../components/formControls";
-import { SpinBlock } from "../UpdateProductForm/styled";
 
 export const LoginForm = () => {
-  const [isLoading, setIsLoading] = useState(false);
-
   const initialValues = {
     username: "",
     password: "",
     rememberMe: false
   };
 
-  return !isLoading ? (
+  return (
     <div
       style={{
         position: "relative"
@@ -66,14 +64,13 @@ export const LoginForm = () => {
               />
               <Link to="">Forgot password</Link>
             </RowDiv>
-            <StyledButton
+            <SubmitButton
+              text="Log in"
               htmlType="submit"
-              type="primary"
+              btnType="primary"
               loading={isSubmitting}
               disabled={!isValid || isSubmitting}
-            >
-              Log in
-            </StyledButton>
+            />
             <RowDiv>
               <div>Login with</div>
               <div
@@ -83,22 +80,13 @@ export const LoginForm = () => {
                 }}
               >
                 <Link to="">
-                  <StyledIcon
-                    type="google-circle"
-                    theme="filled"
-                  />
+                  <StyledIcon type="google-circle" theme="filled" />
                 </Link>
                 <Link to="">
-                  <StyledIcon
-                    type="instagram"
-                    theme="filled"
-                  />
+                  <StyledIcon type="instagram" theme="filled" />
                 </Link>
                 <Link to="">
-                  <StyledIcon
-                    type="facebook"
-                    theme="filled"
-                  />
+                  <StyledIcon type="facebook" theme="filled" />
                 </Link>
               </div>
               <div>
@@ -109,9 +97,5 @@ export const LoginForm = () => {
         )}
       </Formik>
     </div>
-  ) : (
-    <SpinBlock>
-      <Spin size="large" />
-    </SpinBlock>
   );
 };
