@@ -1,8 +1,7 @@
 import React from 'react';
 import { Container, BigButton } from './styled';
-import { HomePageHeader } from "../../Components";
-import { Paper } from "../../Layouts/Paper/Paper";
-import { Login } from "../../Components";
+import { HomePageHeader, Login } from "../../components";
+import { Paper } from '../../layouts';
 
 let title = 'Manage your finances';
 let text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore

@@ -14,8 +14,13 @@ export const AddProductSchema = Yup.object().shape({
    .max(300, 'Too Long!')
    .required('Required'),
 
-   price: Yup.number()
-   .min(1, 'Can not be zero')
+   costPrice: Yup.number()
    .positive('Must be positive')
+   .min(1, 'Can not be zero')
+   .required('Required'),
+
+   price: Yup.number()
+   .positive('Must be positive')
+   .min(1, 'Can not be zero')
    .required('Required'),
 });

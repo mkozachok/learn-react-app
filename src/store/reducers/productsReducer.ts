@@ -1,7 +1,7 @@
 import { productActionTypes } from '../actionTypes/productActionTypes';
-import {IProductsReducer, IProductsAction} from "../../types/product";
+import { IProductsAction, IProductsReducer } from "../../types/product";
 
-const initialState = {
+const initialState: IProductsReducer = {
   products: null,
   isLoading: false
 };
@@ -23,6 +23,7 @@ const productsReducer = (state = initialState, action:IProductsAction) => {
         ...state,
         isLoading: false
       }
+    default: return state;
   }
 };
 

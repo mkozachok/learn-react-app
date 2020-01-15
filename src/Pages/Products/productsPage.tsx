@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { Table, Divider, Tag } from 'antd';
+import { Table } from 'antd';
 import {useSelector, useDispatch} from "react-redux";
 import {getProductsStart} from "../../store/actions/productsActions";
 import {IProductsState} from "../../types/product";
@@ -13,22 +13,22 @@ const columns = [
   {
     title: 'Description',
     dataIndex: 'description',
-    key: 'description'
+    // key: 'description'
   },
   {
     title: 'Price',
     dataIndex: 'price',
-    key: 'price'
+    // key: 'price'
   },
   {
     title: 'Created',
     dataIndex: 'created_at',
-    key: 'created'
+    // key: 'created'
   },
   {
     title: 'Updated last',
     dataIndex: 'updated_at',
-    key: 'updated'
+    // key: 'updated'
   }
 ];
 
@@ -39,8 +39,7 @@ export const ProductsPage = () => {
 
   useEffect(() => {
     dispatch(getProductsStart());
-  }, [dispatch, products]);
-console.log(products);
+  }, [dispatch]);
 
   return (
     <div>
@@ -49,9 +48,14 @@ console.log(products);
         loading &&
         <div>Prodcuts are loading</div>
       }
-      <div>
-        {/*<Table columns={columns} dataSource={products}/>*/}
+      { products ? (
+        <div>
+        <Table columns={columns} dataSource={products} rowKey={record => record._id ? record._id : record.title
+        }/>
       </div>
+      ):""
+      }
+      
     </div>
   );
 };

@@ -1,11 +1,12 @@
 import React from 'react';
-import {CreateProductForm} from "../../Components/Forms/CreateProductForm/CreateProductForm";
+import {CreateProductForm} from "../../components/forms";
+import { AdminPageLayout } from '../../layouts/AdminPageLayout/AdminPageLayout';
 
 export const createProductPage = () => {
   return(
-    <div>
+    <AdminPageLayout>
       <h1>Create Product </h1>
       <CreateProductForm/>
-    </div>
+    </AdminPageLayout>
   );
 };

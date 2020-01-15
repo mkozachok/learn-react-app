@@ -2,19 +2,20 @@ export interface IProduct {
   _id?: string
   title: string,
   description: string,
+  costPrice: number,
   price: number,
   previewImage: string,
-  created_at: string,
-  updated_at: string
+  created_at?: string,
+  updated_at?: string
 }
 
 export interface IProductAction {
   type: string,
-  currentProduct: null,
+  currentProduct: IProduct | null,
 }
 
-interface IProductReducer {
-  currentProduct: null | IProduct,
+export interface IProductReducer {
+  currentProduct: IProduct | null,
   isLoading: boolean,
 }
 
@@ -23,7 +24,7 @@ export interface IProductState {
 }
 
 export interface IProductsReducer {
-  products: null | IProduct[] | undefined,
+  products: null | IProduct[],
   isLoading: boolean,
 }
 
@@ -33,5 +34,5 @@ export interface IProductsState {
 
 export interface IProductsAction {
   type: string,
-  productsList?: null | IProduct[]
+  productsList: null | IProduct[]
 }
