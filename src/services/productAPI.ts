@@ -7,7 +7,7 @@ export const productAPI = {
   removeProductByID: (product_id: string) => remove(`${api.host}/products/${product_id}`),
   addProduct: (product: IProduct) => post(`${api.host}/products`, product),
   updateProduct: (product: IProduct) => put(`${api.host}/products`, product),
-  getAllProducts: () => get(`${api.host}/products)`)
+  getAllProducts: () => get(`${api.host}/products`)
 }
 
 export default productAPI;

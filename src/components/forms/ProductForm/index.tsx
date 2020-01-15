@@ -4,7 +4,7 @@ import {
   AntInput,
   AntInputNumber,
   AntTextArea
-} from "../../../components/formControls";
+} from "../../formControls";
 import { SubmitContainer } from "./styled";
 import { Button } from "antd";
 
