@@ -20,7 +20,23 @@ export const SidebarMenu = () => (
         <NavLink to="/admin/products">All products</NavLink>
       </Item>
       <Item key="2">
-        <NavLink to="/admin/products/add">Add product</NavLink>
+        <NavLink to="/admin/products/add">Add new product</NavLink>
+      </Item>
+    </SubMenu>
+    <SubMenu
+      key="sub2"
+      title={
+        <span>
+          <Icon component={productsIcon} />
+          <span>Orders</span>
+        </span>
+      }
+    >
+      <Item key="1">
+        <NavLink to="/admin/orders">All orders</NavLink>
+      </Item>
+      <Item key="2">
+        <NavLink to="/admin/orders/add">Add new order</NavLink>
       </Item>
     </SubMenu>
   </Menu>
