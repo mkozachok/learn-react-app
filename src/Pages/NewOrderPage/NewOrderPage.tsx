@@ -1,8 +1,9 @@
 import React from 'react';
 import { AdminPageLayout } from '../../layouts/AdminPageLayout/AdminPageLayout';
+import { NewOrder } from '../../components/NewOrder/NewOrder';
 
-export const OrderPage = () => (
+export const NewOrderPage = () => (
   <AdminPageLayout>
-    <div></div>
+    <NewOrder />
   </AdminPageLayout>
 )

@@ -5,7 +5,7 @@ import {createProductPage} from './CreateProductPage/createProductPage';
 import {updateProductPage} from './UpdateProductPage/updateProductPage';
 import {AdminDashboard} from './AdminDashboard/AdminDashboard';
 import {ProductsPage} from './Products/productsPage';
-import {OrderPage} from './OrderPage/OrderPage';
+import {NewOrderPage} from './NewOrderPage/NewOrderPage';
 
 export {
     ProductsPage,
@@ -15,5 +15,5 @@ export {
     createProductPage,
     updateProductPage,
     AdminDashboard,
-    OrderPage,
+    NewOrderPage,
 };
