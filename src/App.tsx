@@ -10,6 +10,7 @@ import {
   createProductPage,
   updateProductPage,
   AdminDashboard,
+  OrderPage,
 } from "./pages";
 import { browserHistory } from './index'
 
@@ -28,6 +29,7 @@ const App: React.FC = () => {
         />
         <Route path="/admin/products/:product_id" component={ProductDetails} />
         <Route path="/admin/dashboard" component={AdminDashboard} />
+        <Route path="/admin/orders/add" component={OrderPage} />
       </Switch>
     </Router>
   );
