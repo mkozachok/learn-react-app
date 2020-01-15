@@ -1,14 +1,20 @@
 import React, {useEffect} from 'react';
-import { Table } from 'antd';
+import 'antd/dist/antd.css';
+import { Table} from 'antd';
 import {useSelector, useDispatch} from "react-redux";
 import {getProductsStart} from "../../store/actions/productsActions";
-import {IProductsState} from "../../types/product";
+import {IProductsState, IProduct} from "../../types/product";
+import {Header} from "./styled";
 
 const columns = [
   {
     title: 'Title',
     dataIndex: 'title',
-    key: 'title'
+    key: 'title',
+    render: (text: string, record: IProduct) => {
+      let path = '/products/' + record._id;
+      return <a href={path}>{text}</a>;
+    }
   },
   {
     title: 'Description',
@@ -28,7 +34,12 @@ const columns = [
   {
     title: 'Updated last',
     dataIndex: 'updated_at',
-    // key: 'updated'
+    key: 'updated'
+  },
+  {
+    title: 'Action',
+    key: 'action',
+    render: (record:IProduct) => <a href='#'>Edit</a>
   }
 ];
 
@@ -41,7 +52,7 @@ export const ProductsPage = () => {
     dispatch(getProductsStart());
   }, [dispatch]);
 
-  return (
+  return products ? (
     <div>
       <h1>Products</h1>
       {
@@ -57,6 +68,6 @@ export const ProductsPage = () => {
       }
       
     </div>
-  );
+  ) : (<div>no products</div>);
 };
 
