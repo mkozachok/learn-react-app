@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { INewOrderState } from '../../types/order';
 
-const initState: INewOrderState = {
+const initOrder: INewOrderState = {
   products: null,
 }
 
 export const NewOrder = () => {
-  const [state, setState] = useState(initState);
+  const [order, setOrder] = useState(initOrder);
 
   return (
     <div></div>
