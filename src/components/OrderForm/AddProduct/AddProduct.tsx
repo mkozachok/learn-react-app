@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import AsyncSelect from 'react-select/async';
 import { productsList } from '../../../__mocks__/productsMock';
 import { Button } from 'antd';
-import { IProduct } from '../../../types/order';
-
-const initProduct: IProduct | {} = {};
+import { StyledAddProduct } from './StyledAddProduct';
 
 const filterProducts = (inputValue: string) => {
   return productsList.filter(product =>
@@ -20,19 +18,32 @@ const promiseOptions = (inputValue: string) => (
   })
 )
 
-export const SelectProduct = ({ order, setOrder }: any) => {
-  const [product, setProduct] = useState(initProduct);
+export const AddProduct = ({ order, setOrder }: any) => {
+  const [currentProduct, setCurrentProduct] = useState();
 
   const addProduct = () => {
-    if (Object.keys(product).length > 0) {
-      const products = [...order.products];
-      products.push(product);
-      setOrder({ ...order, products });
+    if (currentProduct) {
+      const orderItems = [...order.orderItems];
+      let isIncluded = false;
+
+      for (let orderItem of orderItems) {
+        if (orderItem.id === currentProduct.id) {
+          isIncluded = true;
+          ++orderItem.quantity;
+          break;
+        }
+      }
+
+      if (!isIncluded) {
+        orderItems.push({...currentProduct, quantity: 1});
+      }
+
+      setOrder({...order, orderItems})
     }
   }
 
   return (
-    <div>
+    <StyledAddProduct>
       <AsyncSelect
         cacheOptions
         defaultOptions
@@ -40,7 +51,7 @@ export const SelectProduct = ({ order, setOrder }: any) => {
         getOptionValue={option => option.id}
         getOptionLabel={option => option.title}
         loadOptions={promiseOptions}
-        onChange={(value) => value ? setProduct(value) : setProduct(initProduct)}
+        onChange={(value) => setCurrentProduct(value)}
       />
 
       <Button
@@ -51,6 +62,6 @@ export const SelectProduct = ({ order, setOrder }: any) => {
       >
         Add product
       </Button>
-    </div>
+    </StyledAddProduct>
   )
 }

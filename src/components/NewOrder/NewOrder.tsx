@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import { INewOrderState } from '../../types/order';
-import { SelectProduct } from '../OrderForm/SelectProduct/SelectProduct';
+import { AddProduct } from '../OrderForm/AddProduct/AddProduct';
 
 const initOrder: INewOrderState = {
-  products: [],
+  orderItems: [],
+  totalPrice: 0,
 }
 
 export const NewOrder = () => {
   const [order, setOrder] = useState(initOrder);
-  console.log(order);
 
   return (
-    <div>
-      <SelectProduct order={order} setOrder={setOrder} />
+    <div style={{ padding: '30px 0' }}>
+      <AddProduct order={order} setOrder={setOrder} />
     </div>
   )
 }
