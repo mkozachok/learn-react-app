@@ -1,8 +1,11 @@
-interface IProduct {
-    value: string,
-    label: string,
+export interface IOrderItem {
+    id: string,
+    title: string,
+    price: number,
+    quantity?: number,
 }
 
 export interface INewOrderState {
-    products: IProduct[] | null,
+    orderItems: IOrderItem[] | [],
+    totalPrice: number,
 }
