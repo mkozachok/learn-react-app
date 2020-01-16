@@ -58,6 +58,7 @@ export const AddProduct = ({ order, setOrder }: any) => {
         type="primary"
         block
         style={{ marginTop: "1rem" }}
+        disabled={!currentProduct}
         onClick={addProduct}
       >
         Add product
