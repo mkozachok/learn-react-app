@@ -1,6 +1,5 @@
 import React from "react";
 import "antd/dist/antd.css";
-// import './index.css';
 import { Table, InputNumber, Popconfirm, Button } from "antd";
 
 export const OrderItemsTable = ({ order, setOrder }: any) => {

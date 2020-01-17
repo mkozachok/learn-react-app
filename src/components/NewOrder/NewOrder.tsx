@@ -3,7 +3,7 @@ import { INewOrderState } from "../../types/order";
 import { AddProduct } from "../OrderForm/AddProduct/AddProduct";
 import { OrderItemsTable } from "../tables/CreateOrderTable/OrderItemsTable/OrderItemsTable";
 
-let initOrder: INewOrderState = {
+const initOrder: INewOrderState = {
   orderItems: [],
   totalPrice: 0
 };
