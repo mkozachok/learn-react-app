@@ -8,7 +8,6 @@ const initOrder: INewOrderState = {
   totalPrice: 0
 };
 
-
 export const NewOrder = () => {
   const [order, setOrder] = useState(initOrder);
 
