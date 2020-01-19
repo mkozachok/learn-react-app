@@ -3,7 +3,7 @@ import "antd/dist/antd.css";
 import { Table, InputNumber, Popconfirm, Button } from "antd";
 import { INewOrderState, IOrderItem } from "../../../types/order";
 
-interface IOrderItemsTable {
+export interface IOrderItemsTable {
   order: INewOrderState;
   setOrder: (value: INewOrderState) => void;
 }
@@ -30,6 +30,7 @@ export const OrderTable = ({ order, setOrder }: IOrderItemsTable) => {
       render: (record: IOrderItem) => (
         <InputNumber
           type="number"
+          className="quantity-input"
           min={1}
           defaultValue={1}
           value={record.quantity}

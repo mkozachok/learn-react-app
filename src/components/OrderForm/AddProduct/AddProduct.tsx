@@ -13,7 +13,7 @@ interface IAddProduct {
 export const AddProduct = ({ order, setOrder }: IAddProduct) => {
   const updateOrder = (selected: IProductBase) => {
     const orderItems = order.orderItems;
-    let isIncluded = orderItems.some(item => item._id === selected._id);
+    const isIncluded = orderItems.some(item => item._id === selected._id);
 
     if (isIncluded) {
       setOrder({
