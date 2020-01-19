@@ -1,68 +1,47 @@
-import React, { useState } from 'react';
-import AsyncSelect from 'react-select/async';
-import { productsList } from '../../../__mocks__/productsMock';
-import { Button } from 'antd';
-import { StyledAddProduct } from './StyledAddProduct';
+import React from "react";
+import AsyncSelect from "react-select/async";
+import { INewOrderState } from "../../../types/order";
+import { IProductBase } from "../../../types/product";
+import productAPI from "../../../services/productAPI";
+import { StyledAddProduct } from "./StyledAddProduct";
 
-const filterProducts = (inputValue: string) => {
-  return productsList.filter(product =>
-    product.title.toLowerCase().includes(inputValue.toLowerCase())
-  );
-};
+interface IAddProduct {
+  order: INewOrderState;
+  setOrder: (value: INewOrderState) => void;
+}
 
-const promiseOptions = (inputValue: string) => (
-  new Promise(resolve => {
-    setTimeout(() => {
-      resolve(filterProducts(inputValue));
-    });
-  })
-)
+export const AddProduct = ({ order, setOrder }: IAddProduct) => {
+  const updateOrder = (selected: IProductBase) => {
+    const orderItems = order.orderItems;
+    let isIncluded = orderItems.some(item => item._id === selected._id);
 
-export const AddProduct = ({ order, setOrder }: any) => {
-  const [currentProduct, setCurrentProduct] = useState();
-
-  const addProduct = () => {
-    if (currentProduct) {
-      const orderItems = [...order.orderItems];
-      let isIncluded = false;
-
-      for (let orderItem of orderItems) {
-        if (orderItem.id === currentProduct.id) {
-          isIncluded = true;
-          ++orderItem.quantity;
-          break;
-        }
-      }
-
-      if (!isIncluded) {
-        orderItems.push({...currentProduct, quantity: 1});
-      }
-
-      setOrder({...order, orderItems})
+    if (isIncluded) {
+      setOrder({
+        ...order,
+        orderItems: orderItems.map(item =>
+          item._id === selected._id
+            ? { ...item, quantity: ++item.quantity }
+            : item
+        )
+      });
+    } else {
+      setOrder({
+        ...order,
+        orderItems: [...orderItems, { ...selected, quantity: 1 }]
+      });
     }
-  }
+  };
 
   return (
     <StyledAddProduct>
       <AsyncSelect
         cacheOptions
-        defaultOptions
         isClearable
-        getOptionValue={option => option.id}
+        getOptionValue={option => option._id}
         getOptionLabel={option => option.title}
-        loadOptions={promiseOptions}
-        onChange={(value) => setCurrentProduct(value)}
+        loadOptions={productAPI.productsSearch}
+        onChange={value => value && updateOrder(value as IProductBase)}
       />
-
-      <Button
-        type="primary"
-        block
-        style={{ marginTop: "1rem" }}
-        disabled={!currentProduct}
-        onClick={addProduct}
-      >
-        Add product
-      </Button>
     </StyledAddProduct>
-  )
-}
+  );
+};

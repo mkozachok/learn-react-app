@@ -1,10 +1,9 @@
 import React, {useEffect} from 'react';
 import 'antd/dist/antd.css';
-import { Table} from 'antd';
+import { Table, Button} from 'antd';
 import {useSelector, useDispatch} from "react-redux";
 import {getProductsStart} from "../../store/actions/productsActions";
 import {IProductsState, IProduct} from "../../types/product";
-import {Header} from "./styled";
 
 const columns = [
   {
@@ -39,7 +38,7 @@ const columns = [
   {
     title: 'Action',
     key: 'action',
-    render: (record:IProduct) => <a href='#'>Edit</a>
+    render: (record:IProduct) => <Button>Edit</Button>
   }
 ];
 

@@ -1,11 +1,10 @@
-export interface IOrderItem {
-    id: string,
-    title: string,
-    price: number,
-    quantity?: number,
+import { IProductBase } from "./product";
+
+export interface IOrderItem extends IProductBase {
+  quantity: number;
 }
 
 export interface INewOrderState {
-    orderItems: IOrderItem[] | [],
-    totalPrice: number,
+  orderItems: IOrderItem[];
+  totalPrice: number;
 }
