@@ -1,0 +1,1583 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Root /> should match a snapshot 1`] = `ShallowWrapper {}`;
+
+exports[`<Root /> should not crash when rendering 1`] = `
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "sc-bxivhb dxevHz",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {
+          "class": "sc-htpNat hqmgw",
+        },
+        "children": Array [
+          Object {
+            "attribs": Object {},
+            "children": Array [
+              Object {
+                "data": "logo",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {},
+              "children": Array [
+                Object {
+                  "attribs": Object {
+                    "class": "sc-bdVaJa kZHWPG",
+                    "href": "#",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": " Link ",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "attribs": Object {
+                      "class": "sc-bdVaJa kZHWPG",
+                      "href": "#",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": " Link ",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "href": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "href": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                },
+                Object {
+                  "attribs": Object {
+                    "class": "sc-bdVaJa kZHWPG",
+                    "href": "#",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": " Link ",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "class": "sc-bdVaJa kZHWPG",
+                      "href": "#",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": " Link ",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "href": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "href": undefined,
+                    },
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {},
+              "x-attribsPrefix": Object {},
+            },
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {},
+            "x-attribsPrefix": Object {},
+          },
+          Object {
+            "attribs": Object {},
+            "children": Array [
+              Object {
+                "attribs": Object {
+                  "class": "sc-bdVaJa kZHWPG",
+                  "href": "#",
+                },
+                "children": Array [
+                  Object {
+                    "data": " Link ",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "a",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "class": "sc-bdVaJa kZHWPG",
+                    "href": "#",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": " Link ",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "href": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "href": undefined,
+                },
+              },
+              Object {
+                "attribs": Object {
+                  "class": "sc-bdVaJa kZHWPG",
+                  "href": "#",
+                },
+                "children": Array [
+                  Object {
+                    "data": " Link ",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "a",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "class": "sc-bdVaJa kZHWPG",
+                    "href": "#",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": " Link ",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "href": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "href": undefined,
+                },
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {},
+              "children": Array [
+                Object {
+                  "data": "logo",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {},
+              "x-attribsPrefix": Object {},
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {},
+            "x-attribsPrefix": Object {},
+          },
+        ],
+        "name": "header",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {},
+          "children": Array [
+            Object {
+              "attribs": Object {
+                "class": "sc-EHOje eSwfbJ",
+              },
+              "children": Array [
+                Object {
+                  "data": "Manage your finances",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "h1",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "class": "sc-bZQynM dCkSOV",
+                },
+                "children": Array [
+                  Object {
+                    "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Aenean et tortor at risus viverra adipiscing at in. Neque aliquam vestibulum
+                    morbi blandit cursus risus at ultrices. Vitae tortor condimentum lacinia quis vel eros donec. Ornare
+                    arcu dui vivamus arcu felis bibendum ut tristique. Consectetur libero id faucibus nisl tincidunt
+                    eget nullam. Elit at imperdiet dui accumsan sit amet nulla facilisi morbi. In massa tempor nec
+                    feugiat nisl. Velit laoreet id donec ultrices tincidunt arcu non. Nisi quis eleifend quam adipiscing
+                    vitae proin sagittis nisl rhoncus. Lectus magna fringilla urna porttitor. Id ornare arcu odio ut sem
+                    nulla pharetra diam. Sapien pellentesque habitant morbi tristique senectus et.",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "p",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "class": "sc-ifAKCX zjNlg",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Create free account",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "button",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "attribs": Object {
+                      "class": "sc-bwzfXH eDfueO",
+                      "href": "/login",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": " Log in ",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "href": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "href": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+            Object {
+              "attribs": Object {
+                "class": "sc-bZQynM dCkSOV",
+              },
+              "children": Array [
+                Object {
+                  "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Aenean et tortor at risus viverra adipiscing at in. Neque aliquam vestibulum
+                    morbi blandit cursus risus at ultrices. Vitae tortor condimentum lacinia quis vel eros donec. Ornare
+                    arcu dui vivamus arcu felis bibendum ut tristique. Consectetur libero id faucibus nisl tincidunt
+                    eget nullam. Elit at imperdiet dui accumsan sit amet nulla facilisi morbi. In massa tempor nec
+                    feugiat nisl. Velit laoreet id donec ultrices tincidunt arcu non. Nisi quis eleifend quam adipiscing
+                    vitae proin sagittis nisl rhoncus. Lectus magna fringilla urna porttitor. Id ornare arcu odio ut sem
+                    nulla pharetra diam. Sapien pellentesque habitant morbi tristique senectus et.",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "p",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "class": "sc-ifAKCX zjNlg",
+                },
+                "children": Array [
+                  Object {
+                    "data": "Create free account",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "button",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "class": "sc-bwzfXH eDfueO",
+                    "href": "/login",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": " Log in ",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "class": "sc-EHOje eSwfbJ",
+                },
+                "children": Array [
+                  Object {
+                    "data": "Manage your finances",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "h1",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+            Object {
+              "attribs": Object {
+                "class": "sc-ifAKCX zjNlg",
+              },
+              "children": Array [
+                Object {
+                  "data": "Create free account",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "button",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "class": "sc-bwzfXH eDfueO",
+                  "href": "/login",
+                },
+                "children": Array [
+                  Object {
+                    "data": " Log in ",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "a",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "href": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "href": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "class": "sc-bZQynM dCkSOV",
+                },
+                "children": Array [
+                  Object {
+                    "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Aenean et tortor at risus viverra adipiscing at in. Neque aliquam vestibulum
+                    morbi blandit cursus risus at ultrices. Vitae tortor condimentum lacinia quis vel eros donec. Ornare
+                    arcu dui vivamus arcu felis bibendum ut tristique. Consectetur libero id faucibus nisl tincidunt
+                    eget nullam. Elit at imperdiet dui accumsan sit amet nulla facilisi morbi. In massa tempor nec
+                    feugiat nisl. Velit laoreet id donec ultrices tincidunt arcu non. Nisi quis eleifend quam adipiscing
+                    vitae proin sagittis nisl rhoncus. Lectus magna fringilla urna porttitor. Id ornare arcu odio ut sem
+                    nulla pharetra diam. Sapien pellentesque habitant morbi tristique senectus et.",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "p",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "class": "sc-EHOje eSwfbJ",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Manage your finances",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "h1",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+            Object {
+              "attribs": Object {
+                "class": "sc-bwzfXH eDfueO",
+                "href": "/login",
+              },
+              "children": Array [
+                Object {
+                  "data": " Log in ",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "a",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "class": "sc-ifAKCX zjNlg",
+                },
+                "children": Array [
+                  Object {
+                    "data": "Create free account",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "button",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "class": "sc-bZQynM dCkSOV",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Aenean et tortor at risus viverra adipiscing at in. Neque aliquam vestibulum
+                    morbi blandit cursus risus at ultrices. Vitae tortor condimentum lacinia quis vel eros donec. Ornare
+                    arcu dui vivamus arcu felis bibendum ut tristique. Consectetur libero id faucibus nisl tincidunt
+                    eget nullam. Elit at imperdiet dui accumsan sit amet nulla facilisi morbi. In massa tempor nec
+                    feugiat nisl. Velit laoreet id donec ultrices tincidunt arcu non. Nisi quis eleifend quam adipiscing
+                    vitae proin sagittis nisl rhoncus. Lectus magna fringilla urna porttitor. Id ornare arcu odio ut sem
+                    nulla pharetra diam. Sapien pellentesque habitant morbi tristique senectus et.",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "p",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "class": "sc-EHOje eSwfbJ",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Manage your finances",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "h1",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "href": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "href": undefined,
+              },
+            },
+          ],
+          "name": "article",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": null,
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {},
+          "x-attribsPrefix": Object {},
+        },
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+        },
+      },
+      Object {
+        "attribs": Object {},
+        "children": Array [
+          Object {
+            "attribs": Object {
+              "class": "sc-EHOje eSwfbJ",
+            },
+            "children": Array [
+              Object {
+                "data": "Manage your finances",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "h1",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {
+                "class": "sc-bZQynM dCkSOV",
+              },
+              "children": Array [
+                Object {
+                  "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Aenean et tortor at risus viverra adipiscing at in. Neque aliquam vestibulum
+                    morbi blandit cursus risus at ultrices. Vitae tortor condimentum lacinia quis vel eros donec. Ornare
+                    arcu dui vivamus arcu felis bibendum ut tristique. Consectetur libero id faucibus nisl tincidunt
+                    eget nullam. Elit at imperdiet dui accumsan sit amet nulla facilisi morbi. In massa tempor nec
+                    feugiat nisl. Velit laoreet id donec ultrices tincidunt arcu non. Nisi quis eleifend quam adipiscing
+                    vitae proin sagittis nisl rhoncus. Lectus magna fringilla urna porttitor. Id ornare arcu odio ut sem
+                    nulla pharetra diam. Sapien pellentesque habitant morbi tristique senectus et.",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "p",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "class": "sc-ifAKCX zjNlg",
+                },
+                "children": Array [
+                  Object {
+                    "data": "Create free account",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "button",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "class": "sc-bwzfXH eDfueO",
+                    "href": "/login",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": " Log in ",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+          Object {
+            "attribs": Object {
+              "class": "sc-bZQynM dCkSOV",
+            },
+            "children": Array [
+              Object {
+                "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Aenean et tortor at risus viverra adipiscing at in. Neque aliquam vestibulum
+                    morbi blandit cursus risus at ultrices. Vitae tortor condimentum lacinia quis vel eros donec. Ornare
+                    arcu dui vivamus arcu felis bibendum ut tristique. Consectetur libero id faucibus nisl tincidunt
+                    eget nullam. Elit at imperdiet dui accumsan sit amet nulla facilisi morbi. In massa tempor nec
+                    feugiat nisl. Velit laoreet id donec ultrices tincidunt arcu non. Nisi quis eleifend quam adipiscing
+                    vitae proin sagittis nisl rhoncus. Lectus magna fringilla urna porttitor. Id ornare arcu odio ut sem
+                    nulla pharetra diam. Sapien pellentesque habitant morbi tristique senectus et.",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "p",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {
+                "class": "sc-ifAKCX zjNlg",
+              },
+              "children": Array [
+                Object {
+                  "data": "Create free account",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "button",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "class": "sc-bwzfXH eDfueO",
+                  "href": "/login",
+                },
+                "children": Array [
+                  Object {
+                    "data": " Log in ",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "a",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "href": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "href": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "class": "sc-EHOje eSwfbJ",
+              },
+              "children": Array [
+                Object {
+                  "data": "Manage your finances",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "h1",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+          Object {
+            "attribs": Object {
+              "class": "sc-ifAKCX zjNlg",
+            },
+            "children": Array [
+              Object {
+                "data": "Create free account",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "button",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {
+                "class": "sc-bwzfXH eDfueO",
+                "href": "/login",
+              },
+              "children": Array [
+                Object {
+                  "data": " Log in ",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "a",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "href": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "href": undefined,
+              },
+            },
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "class": "sc-bZQynM dCkSOV",
+              },
+              "children": Array [
+                Object {
+                  "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Aenean et tortor at risus viverra adipiscing at in. Neque aliquam vestibulum
+                    morbi blandit cursus risus at ultrices. Vitae tortor condimentum lacinia quis vel eros donec. Ornare
+                    arcu dui vivamus arcu felis bibendum ut tristique. Consectetur libero id faucibus nisl tincidunt
+                    eget nullam. Elit at imperdiet dui accumsan sit amet nulla facilisi morbi. In massa tempor nec
+                    feugiat nisl. Velit laoreet id donec ultrices tincidunt arcu non. Nisi quis eleifend quam adipiscing
+                    vitae proin sagittis nisl rhoncus. Lectus magna fringilla urna porttitor. Id ornare arcu odio ut sem
+                    nulla pharetra diam. Sapien pellentesque habitant morbi tristique senectus et.",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "p",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "class": "sc-EHOje eSwfbJ",
+                },
+                "children": Array [
+                  Object {
+                    "data": "Manage your finances",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "h1",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+          Object {
+            "attribs": Object {
+              "class": "sc-bwzfXH eDfueO",
+              "href": "/login",
+            },
+            "children": Array [
+              Object {
+                "data": " Log in ",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "a",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "class": "sc-ifAKCX zjNlg",
+              },
+              "children": Array [
+                Object {
+                  "data": "Create free account",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "button",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "class": "sc-bZQynM dCkSOV",
+                },
+                "children": Array [
+                  Object {
+                    "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Aenean et tortor at risus viverra adipiscing at in. Neque aliquam vestibulum
+                    morbi blandit cursus risus at ultrices. Vitae tortor condimentum lacinia quis vel eros donec. Ornare
+                    arcu dui vivamus arcu felis bibendum ut tristique. Consectetur libero id faucibus nisl tincidunt
+                    eget nullam. Elit at imperdiet dui accumsan sit amet nulla facilisi morbi. In massa tempor nec
+                    feugiat nisl. Velit laoreet id donec ultrices tincidunt arcu non. Nisi quis eleifend quam adipiscing
+                    vitae proin sagittis nisl rhoncus. Lectus magna fringilla urna porttitor. Id ornare arcu odio ut sem
+                    nulla pharetra diam. Sapien pellentesque habitant morbi tristique senectus et.",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "p",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "class": "sc-EHOje eSwfbJ",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Manage your finances",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "h1",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+              "href": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+              "href": undefined,
+            },
+          },
+        ],
+        "name": "article",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "class": "sc-htpNat hqmgw",
+          },
+          "children": Array [
+            Object {
+              "attribs": Object {},
+              "children": Array [
+                Object {
+                  "data": "logo",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {},
+                "children": Array [
+                  Object {
+                    "attribs": Object {
+                      "class": "sc-bdVaJa kZHWPG",
+                      "href": "#",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": " Link ",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Object {
+                      "attribs": Object {
+                        "class": "sc-bdVaJa kZHWPG",
+                        "href": "#",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": " Link ",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "a",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                        "href": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                        "href": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "href": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "href": undefined,
+                    },
+                  },
+                  Object {
+                    "attribs": Object {
+                      "class": "sc-bdVaJa kZHWPG",
+                      "href": "#",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": " Link ",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {
+                        "class": "sc-bdVaJa kZHWPG",
+                        "href": "#",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": " Link ",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "a",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                        "href": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                        "href": undefined,
+                      },
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "href": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "href": undefined,
+                    },
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {},
+                "x-attribsPrefix": Object {},
+              },
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {},
+              "x-attribsPrefix": Object {},
+            },
+            Object {
+              "attribs": Object {},
+              "children": Array [
+                Object {
+                  "attribs": Object {
+                    "class": "sc-bdVaJa kZHWPG",
+                    "href": "#",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": " Link ",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "attribs": Object {
+                      "class": "sc-bdVaJa kZHWPG",
+                      "href": "#",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": " Link ",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "href": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "href": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                },
+                Object {
+                  "attribs": Object {
+                    "class": "sc-bdVaJa kZHWPG",
+                    "href": "#",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": " Link ",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "class": "sc-bdVaJa kZHWPG",
+                      "href": "#",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": " Link ",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "a",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "href": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "href": undefined,
+                    },
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {},
+                "children": Array [
+                  Object {
+                    "data": "logo",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {},
+                "x-attribsPrefix": Object {},
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {},
+              "x-attribsPrefix": Object {},
+            },
+          ],
+          "name": "header",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": null,
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "div",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
+}
+`;

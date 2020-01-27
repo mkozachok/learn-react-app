@@ -10,11 +10,11 @@ import {
   createProductPage,
   updateProductPage,
   AdminDashboard,
-  NewOrderPage,
+  NewOrderPage
 } from "./pages";
-import { browserHistory } from './index'
+import { browserHistory } from "./index";
 
-const App: React.FC = () => {
+export const App: React.FC = () => {
   return (
     <Router history={browserHistory}>
       <Switch>

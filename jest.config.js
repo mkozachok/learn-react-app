@@ -1,20 +1,16 @@
 module.exports = {
-  "preset": "ts-jest",
-  "roots": [
-    "<rootDir>/src"
+  preset: "ts-jest",
+  roots: ["<rootDir>/src"],
+  testMatch: [
+    "**/__tests__/**/*.+(ts|js|tsx)",
+    "**/?(*.)+(spec|test).+(ts|js|tsx)"
   ],
-  "testMatch": [
-    "**/__tests__/**/*.+(ts|js)",
-    "**/?(*.)+(spec|test).+(ts|js)"
-  ],
-  "transform": {
+  transform: {
     "^.+\\.(ts|tsx)$": "ts-jest"
   },
-  "moduleNameMapper": {
-    "\\.(css|less|sass|scss)$": "<rootDir>/src/__mocks__/styleMock.js",
+  moduleNameMapper: {
+    "\\.(css|less|sass|scss)$": "<rootDir>/src/__mocks__/styleMock.js"
   },
-  "automock": false,
-  "setupFiles": [
-      "./setupJest.js"
-  ]
-}
+  automock: false,
+  setupFilesAfterEnv: ["./jest.setup.ts"]
+};
