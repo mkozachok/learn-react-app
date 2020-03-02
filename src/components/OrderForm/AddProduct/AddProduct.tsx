@@ -5,7 +5,7 @@ import { IProductBase } from "../../../types/product";
 import productAPI from "../../../services/productAPI";
 import { StyledAddProduct } from "./StyledAddProduct";
 
-interface IAddProduct {
+export interface IAddProduct {
   order: INewOrderState;
   setOrder: (value: INewOrderState) => void;
 }

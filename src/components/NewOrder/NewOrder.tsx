@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { INewOrderState } from "../../types/order";
 import { AddProduct } from "../OrderForm/AddProduct/AddProduct";
+import { AddNovaposhta } from "../OrderForm/AddNovaposhta/AddNovaposhta";
 import { OrderTable } from "../tables/";
 
 export const initOrder: INewOrderState = {
@@ -17,6 +18,9 @@ export const NewOrder = () => {
         <AddProduct order={order} setOrder={setOrder} />
       </div>
       {isOrderNotEmpty && <OrderTable order={order} setOrder={setOrder} />}
+      <div style={{ padding: "30px 0" }}>
+        <AddNovaposhta />
+      </div>
     </div>
   );
 };
